@@ -330,7 +330,7 @@
 
 
 	<!-- breadcrumb -->
-	<!-- <div class="container">
+	<div class="container">
 		<div class="bread-crumb flex-w p-l-25 p-r-15 p-t-30 p-lr-0-lg">
 			<a href="index.html" class="stext-109 cl8 hov-cl1 trans-04">
 				Home
@@ -341,49 +341,12 @@
 				Account
 			</span>
 		</div>
-	</div> -->
+	</div>
 
 
-	<!-- account-page -->
+	<!-- detail-account-page -->
 	<div class="account-page">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-6 col-md-6 col-sm-12 col-12 last-col mx-auto">
-					<div class="form-container">
-						<div class="form-btn">
-							<button onclick="login()">Login</button>
-							<button onclick="register()">Register</button>
-							<hr id="Indicator">
-						</div>
-						<form id="LoginForm" action="account_detail.html">
-							<input type="text" placeholder="username" required>
-							<input type="password" placeholder="password" required>		
-							<div class="form-group">
-								<input type="checkbox" name="remember_me" id="remember_me">
-								<label for="remember_me">Remember Me</label>
-							  </div>					
-							<button type="submit" class="btn" id="btnLogin">Login</button>
-						</form>
-						<form id="RegForm" action="account_detail.html">
-							<input type="text" placeholder="name" required>
-							<input type="password" placeholder="password" required>
-							<input type="email" placeholder="email" required>
-							<input type="tel" placeholder="phone number">
-							<div class="gender">
-								<label><input type="radio" name="gender" value="male">Male</label>
-								<label><input type="radio" name="gender" value="female">Female</label>
-							</div>
-							<button type="submit" class="btn" id="btnRegister">Register</button>
-						</form>
-						  
-						  
-					</div>
-				</div>
-				<div class="col-lg-6 col-md-6 col-sm-12">
-					<!-- <img src="images/image-removebg-preview (52).png" class="img-fluid"> -->
-				</div>
-			</div>
-		</div>
+		
 	</div>
 	
 
@@ -604,64 +567,6 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 		}
 
 	</script>
-
-	<!--===============================================================================================-->
-	<script src="vendor/sweetalert/sweetalert.min.js"></script>
-	<script>
-
-	$('.btn').on('click', function(e) {
-	e.preventDefault();
-	});
-	$('#btnLogin').each(function(){
-	$(this).on('click', function(){
-		swal({
-		icon: "success",
-		title: "Login Successful!",
-		buttons: {
-			confirm: {
-			text: "OK",
-			value: true,
-			visible: true,
-			className: "",
-			closeModal: true
-			}
-		}
-		}).then((value) => {
-		if (value) {
-			window.location.href = "account_detail.html";
-		}
-		});
-
-		$(this).off('click');
-	});
-	});
-
-	$('#btnRegister').each(function(){
-	$(this).on('click', function(){
-		swal({ 
-		icon: "success",
-		title: "Register Successful!",
-		buttons: {
-			confirm: {
-			text: "OK",
-			value: true,
-			visible: true,
-			className: "",
-			closeModal: true
-			}
-		}
-		}).then((value) => {
-		if (value) {
-			window.location.href = "account_detail.html";
-		}
-		});
-
-		$(this).off('click');
-	});
-	});
-
-	</script>
-
 
 </body>
 </html>
